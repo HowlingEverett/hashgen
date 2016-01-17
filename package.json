@@ -1,0 +1,38 @@
+{
+  "name": "hashgen",
+  "version": "1.0.0",
+  "description": "Command line utility for generating simple random hashes.",
+  "main": "index.js",
+  "bin": {
+    "hashgen": "dist/index.js"
+  },
+  "scripts": {
+    "test": "mocha test",
+    "prepublish": "babel index.js --out-file dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HowlingEverett/hashgen.git"
+  },
+  "keywords": [
+    "random",
+    "hash"
+  ],
+  "author": "@howlingeverett",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HowlingEverett/hashgen/issues"
+  },
+  "homepage": "https://github.com/HowlingEverett/hashgen#readme",
+  "dependencies": {
+    "args": "0.0.3",
+    "random-id": "0.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.4.0",
+    "babel-core": "^6.4.0",
+    "babel-preset-es2015": "^6.3.13",
+    "mocha": "^2.3.4",
+    "sinon": "^1.17.2"
+  }
+}
